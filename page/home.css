@@ -1,0 +1,52 @@
+.slider-container {
+    width: 800px;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+  
+  .slider img {
+    width: 200px;
+    height: 200px;
+    scroll-snap-align: start;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ddd;
+    padding: 16px;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+
+  .row {
+    padding: 50px;
+}
+#courseButton {
+    background-color: whitesmoke; /* สีพื้นหลังปุ่ม */
+    color: #430f58; /* ฟอนต์สี */
+    border: 2px solid #430f58; /* สีขอบ */
+    padding: 10px 20px; /* ระยะห่างภายใน */
+    font-size: 16px; /* ขนาดฟอนต์ */
+    cursor: pointer; /* แสดงเป็นมือเมื่อชี้ */
+}
+
+#courseButton:hover {
+    background-color: #430f58; /* เปลี่ยนสีพื้นหลังเมื่อชี้ */
+    color: white; /* เปลี่ยนฟอนต์สีเป็นขาวเมื่อชี้ */
+}
+
